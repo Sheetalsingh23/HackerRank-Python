@@ -1,0 +1,10 @@
+for i in range(int(input())):
+    s1=set(input())
+    s2=set(input())
+    k='No'
+    for i in s1:
+        for j in s2:
+            if i==j:
+                k='Yes'
+                break
+    print(k)
