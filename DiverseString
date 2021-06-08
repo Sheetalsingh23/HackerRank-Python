@@ -1,0 +1,6 @@
+for _ in range(int(input())):
+    s = input()
+    if ord(max(s)) - ord(min(s)) + 1 == len(s) == len(set(s)):
+        print('Yes')
+    else:
+        print('No')
