@@ -1,0 +1,17 @@
+te = int(input())
+while(te != 0):
+    s = input()
+    l = list(s)
+    for i in range(len(l)):
+        if(l[i] == ">"):
+            l[i] = "<"
+        elif(l[i] == "<"):
+            l[i] = ">"
+        else:
+            continue
+    c = 0
+    for i in range(0, len(l)-1):
+        if((l[i] == '>') and (l[i+1] == '<')):
+            c += 1
+    print(c)
+    te -= 1# cook your dish here
