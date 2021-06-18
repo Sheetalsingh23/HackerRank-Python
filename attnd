@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    n,k = map(int,input().split())
+    a = sorted(list(map(int,input().split())))[:n]
+    //print(a)
+    if(k == 0 ):
+        print(sum(a)/len(a))
+    elif(k >= 1):
+        print(sum(a[k:n-k])/len(a[k:n-k]))
