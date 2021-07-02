@@ -1,0 +1,13 @@
+# cook your dish here
+for _ in range(int(input())):
+    m,r=map(int,input().split())
+    ma=max(m,r)
+    mi=min(m,r)
+    if m%2==0 and r%2==0 and ma-mi==2:
+        print("YES")
+    elif(m%2!=0) and r%2!=0 and ma-mi==2:
+        print("YES")
+    elif(mi%2!=0) and ma%2==0 and ma-mi==1 :
+        print("YES")
+    else:
+        print("NO")
